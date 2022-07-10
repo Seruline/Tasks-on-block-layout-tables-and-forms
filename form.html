@@ -22,22 +22,22 @@
     <fieldset>
         <legend>Запись на курсы программирования</legend>
         <div>Имя:</div>
-        <input id="name" type="text" autocomplete="off" placeholder="Андрей"><br>
+        <input id="name" type="text" name="name" autocomplete="off" placeholder="Андрей" required><br>
         <div class="space">
-            <label for="java"><input id = "java" type="radio">Java</label>
-            <label for="C"><input id = "C" type="radio">C++</label>
-            <label for="python"><input id = "python" type="radio">Python</label>
-            <label for="php"><input id = "php" type="radio">PHP</label>
-            <label for="js"><input id = "js" type="radio">JavaScript</label>
+            <label for="Java"><input id = "Java" name="checkbox" type="radio" checked>Java</label>
+            <label for="C"><input id = "C" name="checkbox"  type="radio">C++</label>
+            <label for="python"><input id = "python" name="checkbox"  type="radio">Python</label>
+            <label for="php"><input id = "php" name="checkbox"  type="radio">PHP</label>
+            <label for="js"><input id = "js" name="checkbox"  type="radio">JavaScript</label>
         </div>
         <div class="space">Дополнительная информация:</div>
-        <textarea rows="3" cols="22" placeholder="Есть опыт программирования на Java"></textarea>
+        <textarea rows="3" cols="22" placeholder="Есть опыт программирования на Java" required></textarea>
         <div class="space">Секретное слово:</div>
-        <input id="pas" type="password"><br>
-        <div class="space"<label><input type="checkbox">С правилами ознакомился и согласен</label></div>
+        <input id="pas" name="pas" type="password" required><br>
+        <div class="space"><label><input type="checkbox" required name="approval">С правилами ознакомился и согласен</label></div>
         <div class="space">
             <input type = "submit" value = "Отправить">
-            <input type = "button" value = "Очистить">
+            <input type = "reset" value = "Очистить">
         </div>
     </fieldset>
     <div>Made by Alina</div>
