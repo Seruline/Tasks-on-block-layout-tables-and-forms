@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+        legend{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        fieldset{
+            width: 45%;
+            padding: 40px;
+        }
+        .space{
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>Запись на курсы программирования</legend>
+        <div>Имя:</div>
+        <input id="name" type="text" autocomplete="off" placeholder="Андрей"><br>
+        <div class="space">
+            <label for="java"><input id = "java" type="radio">Java</label>
+            <label for="C"><input id = "C" type="radio">C++</label>
+            <label for="python"><input id = "python" type="radio">Python</label>
+            <label for="php"><input id = "php" type="radio">PHP</label>
+            <label for="js"><input id = "js" type="radio">JavaScript</label>
+        </div>
+        <div class="space">Дополнительная информация:</div>
+        <textarea rows="3" cols="22" placeholder="Есть опыт программирования на Java"></textarea>
+        <div class="space">Секретное слово:</div>
+        <input id="pas" type="password"><br>
+        <div class="space"<label><input type="checkbox">С правилами ознакомился и согласен</label></div>
+        <div class="space">
+            <input type = "submit" value = "Отправить">
+            <input type = "button" value = "Очистить">
+        </div>
+    </fieldset>
+    <div>Made by Alina</div>
+</form>
+</body>
+</html>

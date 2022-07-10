@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <style>
+        body{
+            background-color: #EEEEEE;
+            font-family: Arial, serif;
+        }
+        .main{
+            display: flex;
+            padding: 5%;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 390px;
+            background-color: #FFFFFF;
+            margin-right: 5%;
+        }
+        .block_top {
+            flex: 3.2;
+            background-color: #269f5d;
+            text-align: center;
+            font-size: 200px;
+            padding-top: 15%;
+            color: white;
+            border-radius: 5px 5px 0 0;
+        }
+        .block_bottom {
+            flex: 0.8;
+            background-color: #FFFFFF;
+            box-shadow: 0.2em 0.2em 15px rgba(122,122,122,0.5);
+            border-radius: 0 0 5px 5px;
+        }
+        .content{
+            padding: 20px;
+            font-size: 22px;
+        }
+        .re{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            padding: 3%;
+            top: 75%;
+            left: 80%;
+            background-color: #4d88ef;
+            border-radius: 50%;
+            box-shadow: 0.2em 0.1em 5px rgba(122,122,122,0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="block_top">3</div>
+        <div class="block_bottom">
+            <div class="content">Card 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div><img class="re" src="unnamed.png"></div>
+        <div class="block_top" style="background-color: #65c2dc;  color: black">1</div>
+        <div class="block_bottom">
+            <div class="content">Card 1</div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="block_top" style="background-color: #eebc40;">2</div>
+        <div class="block_bottom">
+            <div class="content">Card 2</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
