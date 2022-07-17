@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trial assignments</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+  <div class="product">
+    <!--    Gallary    -->
+    <div class="product_gallery">
+      <img id="image3" onmousemove="changeImage()" onmouseleave="leave()" class="product_gallery-obj" src="img/image/main.png">
+      <img id="image1" onmousemove="changeImage()" onmouseleave="leave()" class="product_gallery-obj" src="img/image/full.png">
+      <img id="image2" onmousemove="changeImage()" onmouseleave="leave()" class="product_gallery-obj" src="img/image/normal.png">
+    </div>
+    <div class="product_showing">
+      <img id="image0" class="product_main" src="img/image/main.png">
+    </div>
+    <!--    Description    -->
+    <div class="product_description">
+    <h2 class="product_title">Рубашка medicine</h2>
+    <div class="product_categories">
+      <a href="#">Рубашки Medicine</a>
+      <a href="#">Все модели Medicine</a>
+      <a href="#">Рубашки</a>
+    </div>
+    <div class="product_price">
+      <div class="product_old-price">2 699</div>
+      <div class="product_current-price currency">2 499</div>
+      <div class="product_promo-price currency">2 227</div>
+      <div class="product_text-price">- с промокодом</div>
+    </div>
+    <div class="product_info">
+      <div class="product_info-advantage">
+        <img class="icon_mini" src="./img/icon/checkmark.svg">
+        <div class="product_info-point"> В наличии в магазине <a href="https://www.lamoda.ru/p/me024ewghl35/clothes-medicine-rubashka/" target="_blank">Lamoda</a></div>
+      </div>
+      <div class="product_info-advantage">
+        <img class="icon_mini" src="./img/icon/business.svg">
+        <div class="product_info-point">Бесплатаня доставка</div>
+      </div>
+    </div>
+    <div class="product_btn">
+      <button class="btn btn--blue">В магазин</button>
+      <button class="btn">В избранное</button>
+    </div>
+    <div class="product_text">
+      <p>Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.<br>Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах; карман на груди.</p>
+    </div>
+    <div class="product_forwarding">
+      <div class="product_forwarding-title">Поделиться:</div>
+      <div class="product_forwarding-list">
+        <a class="ico" href="#" target="_blank"><img class="icon" src="./img/icon/vk_icon.svg" alt="vk"></a>
+        <a class="ico" href="#" target="_blank"><img class="icon" src="./img/icon/facebook_icon.svg" alt="facebook"></a>
+        <a href="#" target="_blank"><img class="icon" src="./img/icon/google_icon.svg" alt="google"></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  function changeImage() {
+    var iChose = event.target.id;
+      document.getElementById("image0").src = document.getElementById(iChose).src ;
+      return iChose;
+  }
+  function leave(){
+    var onChose = changeImage();
+    document.getElementById("image0").src = document.getElementById("image3").src ;
+  }
+</script>
+</body>
+</html>
