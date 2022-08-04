@@ -1,0 +1,2 @@
+php_flag engine on
+ErrorDocument 404 http://product.com/error/404.php;

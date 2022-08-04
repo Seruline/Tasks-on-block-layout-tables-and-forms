@@ -1,0 +1,112 @@
+@font-face{
+    font-family: "Circe";
+    src: url("../fonts/circe/circe_300.woff");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Circe";
+    font-weight: 700;
+    src: url("../fonts/circe/circe_700.svg");
+
+}
+@font-face{
+    font-family: "Circe";
+    font-weight: 600;
+    src: url("../fonts/circe/circe_600.woff");
+}
+body {
+    font: 1.65rem/1.2 Circe, sans-serif;
+    /*background: linear-gradient(90deg, #4300d2, #a60556);*/
+    background-color: #97C7D3FF;
+    font-size: 16px;
+}
+fieldset{
+    border: 0;
+}
+textarea {resize: none;}
+.form_container{
+    display: flex;
+    position: relative;
+    margin: 2% auto;
+    max-width: 800px;
+    padding: 25px 0;
+    border-radius: 20px;
+    background: #97c7d3;
+    box-shadow:  20px 20px 60px #80a9b3,
+    -20px -20px 60px #aee5f3;
+}
+legend{
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a343a;
+}
+fieldset{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    padding: 40px;
+}
+textarea{
+    width: 550px;
+    border-radius: 5px;
+    border: none;
+    height: 100px;
+    margin: 10px 0 0 0;
+}
+.checkbox{
+    margin: 0 0 20px 0;
+}
+.space{
+    padding-top: 15px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-cl{
+    border: none;
+    background-color: #a8ddea;
+    height: 40px;
+    width: 250px;
+    margin-left: 50px;
+    border-radius: 7px;
+}
+.btn-cl:hover{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #a2d5e2, #88b3be);
+    box-shadow:  6px 6px 12px #86b1bc,
+    -6px -6px 12px #a8ddea;
+}
+.btn-add{
+    border: none;
+    border-radius: 7px;
+    background: #d7d350;
+    box-shadow: inset 6px 6px 12px #bfbc47,
+    inset -6px -6px 12px #efea59;
+    height: 40px;
+    min-width: 250px;
+}
+.btn-add:hover{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #c2be48, #e6e256);
+    box-shadow:  6px 6px 12px #86b1bc,
+    -6px -6px 12px #a8ddea;
+}
+.input-st{
+    border: none;
+}
+.theme{
+    width: 540px;
+}
+.dt{
+    border: none;
+}
+.lab{
+    margin-top: 10px;
+}
+.empty_field{
+    border: 2px solid red;
+    background-color: red;
+}
